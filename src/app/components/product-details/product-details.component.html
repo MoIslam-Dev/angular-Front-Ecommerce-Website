@@ -1,0 +1,26 @@
+<!-- product-details.component.html -->
+<div class="detail-section">
+
+    <div class="product-details">
+<div class="container mt-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="{{ product.imageUrl }}" alt="{{ product.name }}" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex flex-column align-items-center h-100 ">
+          <h2 class="mb-2">{{ product.name }}</h2>
+          <p class="price mb-3">{{ product.unitPrice | currency:'USD' }}</p>
+          <p class="mb-3">{{ product.description }}</p>
+          <button (click)="addToCart()" class="btn btn-primary ">Add to cart</button>
+          <a routerLink="/products" class="mt-5">Back To Product List</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+  
